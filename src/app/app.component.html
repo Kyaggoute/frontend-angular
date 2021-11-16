@@ -1,0 +1,8 @@
+<h1>
+  Annuaire
+</h1>
+
+<input  type="text" [(ngModel)]="searchText">
+<button (click)="handleSearch()">chercher</button>
+<button (click)="handleList()">tout</button>
+<div *ngFor="let entry of entries">{{entry}}</div>
